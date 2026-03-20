@@ -88,14 +88,20 @@ Além disso, conta com:
 
 ### 👤 Usuários
 - `POST /registrar`
-- `GET /usuarios`
-- `PUT /usuarios/{id}`
+- `GET /{nomeUsuario}`
+- `GET /verificar-conta`
+- `PUT /editar-perfil`
+- `PATCH /alterar-senha`
+- `PATCH /adicionar-perfil/{id}`
+- `PATCH /remover-perfil/{id}`
+- `DELETE /desativar`
+- `PATCH /reativar-conta/{id}`
+  
 
 ### 🔐 Protegidos
 - Requerem token JWT no header:
 - Authorization: Bearer {token}
-
-- 
+  
 ---
 
 ## 📧 Verificação de conta
