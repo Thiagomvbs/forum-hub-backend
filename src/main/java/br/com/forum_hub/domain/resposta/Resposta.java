@@ -19,8 +19,6 @@ public class Resposta {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String mensagem;
-    @ManyToOne
-    @JoinColumn(name = "autor_id")
     private String autor;
     private LocalDateTime dataCriacao;
     private Boolean solucao;
